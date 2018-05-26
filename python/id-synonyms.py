@@ -21,7 +21,7 @@ idlist =  open(args.file, "rt")
 
 filename = args.file
 today = datetime.date.today()
-filename += str(today) + "_result.txt"
+filename += "_synomyms_"+ str(today) + "_result.txt"
 f = open(filename, "a", encoding="utf-8")
 f.write('CHEBI\tprefLabel\taltLabel\n')
 
@@ -61,11 +61,15 @@ for localid in idlist:
                 if 'altLabel' in json_obj:
                     altlabel = json_obj['altLabel']
 
-                    for name in altlabel:
-                        #print("altLabel:" + name)
-                        data = line + name + '\t'
-                        print(data)
-                        f.write(data + '\n')
+                    if len(altlabel) > 0:
+                        for name in altlabel:
+                            #print("altLabel:" + name)
+                            data = line + name + '\t'
+                            print(data)
+                            f.write(data + '\n')
+                    else:
+                        print(line)
+                        f.write(line + '\n')
 
 
     except OSError as err:
