@@ -15,7 +15,7 @@ sdf_data =  gzip.open(args.file, "rt")
 
 chebibool = False
 for line in sdf_data:
-    if "ChEBI ID" in line:
+    if "<ChEBI ID>" in line:
         chebibool = True
     if chebibool == True:
         #chebibool = False
