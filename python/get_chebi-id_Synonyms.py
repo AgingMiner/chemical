@@ -19,7 +19,7 @@ chebi_synonyms_bool = False
 write_data = ""
 write_list = []
 filename = args.file
-filename += "_result.txt"
+filename += "_id-to-synonyms-from-sdf_result.txt"
 f = open(filename, "a", encoding="utf-8")
 f.write('CHEBI\tprefLabel\taltLabel\n')
 f.flush()
