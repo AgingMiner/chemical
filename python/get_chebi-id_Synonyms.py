@@ -1,5 +1,6 @@
 import argparse
 import gzip
+import  datetime
 # coding: utf-8
 
 parser = argparse.ArgumentParser()
@@ -19,7 +20,8 @@ chebi_synonyms_bool = False
 write_data = ""
 write_list = []
 filename = args.file
-filename += "_id-to-synonyms-from-sdf_result.txt"
+today = datetime.date.today()
+filename += "_id-to-synonyms-from-sdf_"+ str(today) + "_result.txt"
 f = open(filename, "a", encoding="utf-8")
 f.write('CHEBI\tprefLabel\taltLabel\n')
 f.flush()
