@@ -26,3 +26,12 @@
 * Amino-Acids, Peptides and Proteins (1936)
 * Carbohydrates (1871)
 * Lipids (1784)
+
+# ID LIst
+##  
+
+
+# Synonyms
+## ChEBI_complete_3star.sdf.gz_id-to-synonyms-from-sdf_result.txt.gz
+* Synonyms form ChEBI SDF
+
