@@ -33,5 +33,5 @@
 
 # Synonyms
 ## ChEBI_complete_3star.sdf.gz_id-to-synonyms-from-sdf_result.txt.gz
-* Synonyms form ChEBI SDF
+* Synonyms form ChEBI SDF (
 
